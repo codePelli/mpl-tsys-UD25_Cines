@@ -1,6 +1,5 @@
-drop database if exists ud14_ejercicio06;
-create database if not exists ud14_ejercicio06;
-use ud14_ejercicio06;
+DROP table IF EXISTS peliculas;
+DROP table IF EXISTS salas;
 
 CREATE TABLE peliculas (
     codigo INT PRIMARY KEY,
