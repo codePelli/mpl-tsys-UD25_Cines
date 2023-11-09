@@ -19,7 +19,6 @@ import ejercicios.service.ISalaService;
 @RequestMapping("/salas")
 public class SalaController {
 
-	@Autowired
 	private ISalaService salaServ;
 	
 	@GetMapping("/all")
