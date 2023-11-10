@@ -19,9 +19,10 @@ import ejercicios.service.IPeliculaService;
 @RequestMapping("/peliculas")
 public class PeliController {
 
+	@Autowired
 	private IPeliculaService iPeliServ;
 	
-	@GetMapping("/all")
+	@GetMapping("/list")
     public List<Pelicula> listPeliculas() {
     	
         return iPeliServ.listPelicula();
@@ -48,7 +49,7 @@ public class PeliController {
         peliSeleccionada.setNombre(peli.getNombre());
         peliSeleccionada.setCodigo(peli.getCodigo());
         peliSeleccionada.setCalificacionEdad(peli.getCalificacionEdad());
-        return iPeliServ.updatePelicula(codigo, peliSeleccionada);
+        return iPeliServ.updatePelicula(peliSeleccionada);
     }
 
     @DeleteMapping("/{codigo}")

@@ -12,7 +12,7 @@ public interface ISalaService {
 	
 	Sala saveSala(Sala sala);
 	
-	Sala udpateSala(int codigo, Sala sala);
+	Sala udpateSala(Sala sala);
 	
 	void deleteSala(int codigo);
 

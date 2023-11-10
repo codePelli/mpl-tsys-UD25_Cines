@@ -18,6 +18,10 @@ public class Pelicula {
 	private String nombre;
 	private int calificacionEdad;
 
+	public Pelicula() {
+		super();
+	}
+
 	public Pelicula(int codigo, String nombre, int calificacionEdad) {
 		super();
 		this.codigo = codigo;

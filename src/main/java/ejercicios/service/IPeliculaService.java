@@ -12,7 +12,7 @@ public interface IPeliculaService {
 	
 	Pelicula savePelicula(Pelicula pelicula);
 	
-	Pelicula updatePelicula(int codigo, Pelicula pelicula);
+	Pelicula updatePelicula(Pelicula pelicula);
 	
 	void deletePelicula(int codigo);
 }

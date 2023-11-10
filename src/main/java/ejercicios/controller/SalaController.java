@@ -19,9 +19,10 @@ import ejercicios.service.ISalaService;
 @RequestMapping("/salas")
 public class SalaController {
 
+	@Autowired
 	private ISalaService salaServ;
 	
-	@GetMapping("/all")
+	@GetMapping("/list")
     public List<Sala> lsitSala() {
     	
         return salaServ.listSala();
@@ -50,7 +51,7 @@ public class SalaController {
         salaSeleccionada.setCodigo(sala.getCodigo());
         salaSeleccionada.setPelicula(sala.getPelicula());
         
-        return salaServ.udpateSala(codigo, salaSeleccionada);
+        return salaServ.udpateSala(salaSeleccionada);
     }
 
     @DeleteMapping("/{codigo}")

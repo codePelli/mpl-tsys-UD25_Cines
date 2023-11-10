@@ -31,6 +31,10 @@ public class Sala {
 		this.pelicula = pelicula;
 	}
 
+	public Sala() {
+		super();
+	}
+
 	public int getCodigo() {
 		return codigo;
 	}
